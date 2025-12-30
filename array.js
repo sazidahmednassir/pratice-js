@@ -34,3 +34,25 @@ for (num of number) {
   sum += num;
 }
 console.log(`The sum of array num is : ${sum}`);
+
+// Sum of array elements using reduce
+let total = number.reduce((num, currnum) => num + currnum, 0);
+console.log(`The total sum of array num using reduce is : ${total}`);
+
+// Filter even numbers from array
+let evenNumbers = number.filter((num) => num % 2 === 0);
+console.log(`The even numbers from array are : ${evenNumbers}`);
+
+// Multiply each even number by 5
+let newevenNumbers = evenNumbers.map((num) => num * 5);
+
+console.log(`The even numbers after multiplying by 5 : ${newevenNumbers}`);
+
+// Sort array of fruits
+let fruits = ["banna", "orange", "grapes", "apple"];
+fruits.sort();
+console.log(`The sorted fruits are : ${fruits}`);
+
+let scores = [12, 23, 004, 006, 17, 18];
+scores.sort((a, b) => a - b);
+console.log(`The sorted scores are : ${scores}`);
