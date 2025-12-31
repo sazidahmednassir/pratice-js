@@ -27,4 +27,17 @@ function greet() {
     console.log(greeting); 
 }
 
+console.log(greeting);
 greet(); 
+console.log(greeting);
+
+// Another block scope example with let
+let farewell = "Goodbye";
+const farewellFunction = () => {
+    let farewell = "See you later";
+    console.log(farewell); 
+}
+
+console.log(farewell);
+farewellFunction();
+console.log(farewell);
